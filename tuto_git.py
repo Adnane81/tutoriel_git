@@ -14,6 +14,15 @@ pen = "black"
 def pen_black() :
     global pen
     pen = "black"
+def pen_white() :
+    global pen
+    pen = "white"
+def pen_red() :
+    global pen
+    pen = "red"
+def pen_green() :
+    global pen
+    pen = "green"
     
 def reset():
     bandeau = [0,0,0,0,0,0,0,0,0,0]
@@ -39,6 +48,9 @@ frame1 = tk.Frame(window,borderwidth=2)
 frame1.pack(side="top", fill="both", ipadx=10, ipady=10, expand=0)
 button1 = tk.Button(window,text="noir", command=pen_black).pack(side="right", padx=10, pady=10)
 button_reset = tk.Button(window,text = "reset", command = reset).pack(side = "left", padx = 10, pady = 10)
+button2 = tk.Button(window,text="white", command=pen_white).pack(side="right", padx=10, pady=10)
+button3 = tk.Button(window,text="red", command=pen_red).pack(side="right", padx=10, pady=10)
+button4 = tk.Button(window,text="green", command=pen_green).pack(side="right", padx=10, pady=10)
 
 #creation du bandeau
 def create_bandeau(list) :
