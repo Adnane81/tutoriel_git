@@ -2,8 +2,8 @@ import tkinter as tk
 import random as r
 
 #bandeau de couleurs
-couleurs = ["white"]
-bandeau = [0,0,0,0,0,0,0,0,0,0]
+couleurs = ["white","black","red","green"]
+bandeau = [0,1,2,3,0,1,2,3,0,1]
 coord = []
 
 #pencil
