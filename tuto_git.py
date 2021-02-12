@@ -15,6 +15,11 @@ def pen_black() :
     global pen
     pen = "black"
     
+def reset():
+    bandeau = [0,0,0,0,0,0,0,0,0,0]
+    create_bandeau(bandeau)
+    
+    
 #clicks/bind event
 def callclick(event) :
     for c in coord :
@@ -33,6 +38,7 @@ canvas.pack()
 frame1 = tk.Frame(window,borderwidth=2)
 frame1.pack(side="top", fill="both", ipadx=10, ipady=10, expand=0)
 button1 = tk.Button(window,text="noir", command=pen_black).pack(side="right", padx=10, pady=10)
+button_reset = tk.Button(window,text = "reset", command = reset).pack(side = "left", padx = 10, pady = 10)
 
 #creation du bandeau
 def create_bandeau(list) :
